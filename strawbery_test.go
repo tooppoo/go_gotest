@@ -45,7 +45,13 @@ func Test_いちごの文字列表現を取得する(t *testing.T) {
 }
 
 func Test_重さが8gのあまおうの場合の文字列表現を取得(t *testing.T) {
-	sut := New("あまおう", 8)
+	sut, _ := New("あまおう", 8)
 
 	assert.Equal(t, "あまおう: S", sut.String())
+}
+
+func Test_重さが0gの場合はエラーになる(t *testing.T) {
+	_, err := New("あまおう", 0)
+
+	assert.NotNil(t, err)
 }
