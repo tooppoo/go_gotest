@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func Test_イチゴの文字列表現を取得する(t *testing.T) {
+func Test_いちごの文字列表現を取得する(t *testing.T) {
 	sut := Strawberry{
 		kind: "あまおう",
 		size: "L",
