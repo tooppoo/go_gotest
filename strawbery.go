@@ -6,5 +6,5 @@ type Strawberry struct {
 }
 
 func (berry Strawberry) ToString() string {
-	return "あまおう: L"
+	return berry.kind + ": " + berry.size
 }
