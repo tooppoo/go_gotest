@@ -5,6 +5,6 @@ type Strawberry struct {
 	size string
 }
 
-func (berry Strawberry) ToString() string {
+func (berry Strawberry) String() string {
 	return berry.kind + ": " + berry.size
 }
