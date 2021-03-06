@@ -6,10 +6,21 @@ import (
 )
 
 func Test_いちごの文字列表現を取得する(t *testing.T) {
-	sut := Strawberry{
-		kind: "あまおう",
-		size: "L",
+	cases := []struct {
+		kind     string
+		size     string
+		expected string
+	}{
+		{
+			kind:     "あまおう",
+			size:     "L",
+			expected: "あまおう: L",
+		},
 	}
-	actual := sut.String()
-	assert.Equal(t, "あまおう: L", actual)
+
+	for _, test := range cases {
+		sut := Strawberry{kind: test.kind, size: test.size}
+
+		assert.Equal(t, test.expected, sut.String())
+	}
 }
