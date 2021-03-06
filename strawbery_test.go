@@ -1,4 +1,4 @@
-package tddbc
+package strawberry
 
 import (
 	"github.com/stretchr/testify/assert"
@@ -45,7 +45,7 @@ func Test_いちごの文字列表現を取得する(t *testing.T) {
 }
 
 func Test_いちごをサイズ指定で作成する(t *testing.T) {
-	sut := NewStraberry("あまおう", 8)
+	sut := New("あまおう", 8)
 
 	assert.Equal(t, "あまおう: S", sut.String())
 }
