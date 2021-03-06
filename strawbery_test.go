@@ -11,6 +11,5 @@ func Test_イチゴの文字列表現を取得する(t *testing.T) {
 		size: "L",
 	}
 	actual := sut.ToString()
-
 	assert.Equal(t, "あまおう: L", actual)
 }
