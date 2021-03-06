@@ -1,6 +1,7 @@
 package tddbc
 
 type Strawberry struct {
+	//CAUTION: kindとsizeの値が確定したらenumに変更する。
 	kind string
 	size string
 }

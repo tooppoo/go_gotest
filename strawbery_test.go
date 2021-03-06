@@ -31,8 +31,12 @@ func Test_いちごの文字列表現を取得する(t *testing.T) {
 			size:     "M",
 			expected: "もういっこ: M",
 		},
+		{
+			kind:     "あまおう",
+			size:     "S",
+			expected: "あまおう: S",
+		},
 	}
-
 	for _, test := range cases {
 		sut := Strawberry{kind: test.kind, size: test.size}
 
