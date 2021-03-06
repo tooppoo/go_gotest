@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func Test_あまおうL文字列表現の取得する(t *testing.T) {
+func Test_あまおうLの文字列表現を取得する(t *testing.T) {
 	sut := Strawberry{
 		kind: "あまおう",
 		size: "L",
@@ -13,4 +13,13 @@ func Test_あまおうL文字列表現の取得する(t *testing.T) {
 	actual := sut.ToString()
 
 	assert.Equal(t, "あまおう: L", actual)
+}
+func Test_もういっこMの文字列表現を取得する(t *testing.T) {
+	sut := Strawberry{
+		kind: "もういっこ",
+		size: "M",
+	}
+	actual := sut.ToString()
+
+	assert.Equal(t, "もういっこ: M", actual)
 }
