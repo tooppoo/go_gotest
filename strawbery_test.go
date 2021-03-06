@@ -16,6 +16,21 @@ func Test_いちごの文字列表現を取得する(t *testing.T) {
 			size:     "L",
 			expected: "あまおう: L",
 		},
+		{
+			kind:     "あまおう",
+			size:     "LL",
+			expected: "あまおう: LL",
+		},
+		{
+			kind:     "とちおとめ",
+			size:     "L",
+			expected: "とちおとめ: L",
+		},
+		{
+			kind:     "もういっこ",
+			size:     "M",
+			expected: "もういっこ: M",
+		},
 	}
 
 	for _, test := range cases {
