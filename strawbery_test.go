@@ -50,6 +50,10 @@ func Test_重さが8gのあまおうの場合の文字列表現を取得(t *test
 	assert.Equal(t, "あまおう: S", sut.String())
 }
 
+func Test_重さに応じたサイズを取得する_25g_LLサイズ(t *testing.T) {
+	assert.Equal(t, "LL", WeightToSize(25))
+}
+
 func Test_重さが0gの場合はエラーになる(t *testing.T) {
 	_, err := New("あまおう", 0)
 
