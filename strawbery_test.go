@@ -43,3 +43,9 @@ func Test_いちごの文字列表現を取得する(t *testing.T) {
 		assert.Equal(t, test.expected, sut.String())
 	}
 }
+
+func Test_いちごをサイズ指定で作成する(t *testing.T) {
+	sut := NewStraberry("あまおう", 8)
+
+	assert.Equal(t, "あまおう: S", sut.String())
+}
