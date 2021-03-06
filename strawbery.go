@@ -6,6 +6,7 @@ type Strawberry struct {
 	size string
 }
 
+// 重さについては、ステークホルダーとも整数の範囲でOKと合意した（という設定）
 func New(kind string, weight int) Strawberry {
 	return Strawberry{
 		kind,
